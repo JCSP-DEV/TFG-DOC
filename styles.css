@@ -633,7 +633,6 @@ footer {
 
 .doc-section .component-section {
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-    max-height: 2000px;
     opacity: 1;
     overflow: hidden;
 }
