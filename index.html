@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transprompter - Project Documentation</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logoApp.png" alt="Transprompter Logo" class="logo-img">
+                <span>Transprompter Documentation</span>
+            </div>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="doc-section">
+            <h1>Project Documentation</h1>
+            <p class="intro">This documentation provides installation and setup instructions for all components of the Transprompter project.</p>
+
+            <div class="component-section">
+                <h2><i class="fas fa-server"></i> API Installation</h2>
+                <div class="installation-steps">
+                    <h3>Prerequisites:</h3>
+                    <div class="sub-content">
+                        <ul>
+                            <li>Java 23 or higher</li>
+                            <li>MySQL database with 'teleprompter' database created</li>
+                            <li>Properly configured .env file</li>
+                        </ul>
+                    </div>
+
+                    <h3>Installation Steps:</h3>
+                    <div class="sub-content">
+                        <ol>
+                            <li>Clone the repository:
+                                <pre>git clone https://github.com/JCSP-DEV/TelePrompter-API</pre>
+                            </li>
+                            <li>Navigate to the project directory</li>
+                            <li>Execute the JAR file:
+                                <pre>java -jar teleprompter-api.jar</pre>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h2><i class="fas fa-laptop"></i> Admin Web Application</h2>
+                <div class="installation-steps">
+                    <h3>Prerequisites:</h3>
+                    <div class="sub-content">
+                        <ul>
+                            <li>Java 21 or higher</li>
+                            <li>Properly configured web server</li>
+                        </ul>
+                    </div>
+
+                    <h3>Installation Steps:</h3>
+                    <div class="sub-content">
+                        <ol>
+                            <li>Clone the repository:
+                                <pre>git clone https://github.com/JCSP-DEV/TFG-AdminWebApp</pre>
+                            </li>
+                            <li>Locate the .war file in the project</li>
+                            <li>Deploy the .war file to your web server</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h2><i class="fab fa-android"></i> Android Application</h2>
+                <div class="installation-steps">
+                    <h3>Installation Options:</h3>
+                    <div class="sub-content">
+                        <div class="installation-options">
+                            <div class="option">
+                                <h4>Option 1: Download from GitHub</h4>
+                                <div class="sub-content">
+                                    <ol>
+                                        <li>Clone the repository:
+                                            <pre>git clone https://github.com/JCSP-DEV/TFG-TransPromter-Android-</pre>
+                                        </li>
+                                        <li>Locate the APK file in the project</li>
+                                        <li>Install the APK on your Android device</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <h4>Option 2: Download from Website</h4>
+                                <div class="sub-content">
+                                    <ol>
+                                        <li>Visit <a href="https://transprompter.jc-sp.me/" target="_blank">https://transprompter.jc-sp.me/</a></li>
+                                        <li>Download the APK file</li>
+                                        <li>Install the APK on your Android device</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc-section">
+            <h1>User Manuals</h1>
+            <p class="intro">Detailed guides for using the different components of the Transprompter system.</p>
+
+            <div class="component-section">
+                <h2><i class="fas fa-laptop"></i> Admin Web Application User Manual</h2>
+                <div class="manual-content">
+                    <h3>Login</h3>
+                    <div class="sub-content">
+                        <p>To access the admin web application, you need administrator credentials. Contact your system administrator if you don't have access.</p>
+                    </div>
+
+                    <h3>Main Interface</h3>
+                    <div class="sub-content">
+                        <p>The main interface displays a list of all users in the system. The interface includes:</p>
+                        <ul>
+                            <li>Search field at the top for filtering users</li>
+                            <li>Sortable columns for organizing user data</li>
+                            <li>Action buttons for each user (Edit, Reset Password, Delete)</li>
+                            <li>Add User and Logout buttons in the top navigation bar</li>
+                        </ul>
+                    </div>
+
+                    <h3>User Management</h3>
+                    <div class="sub-content">
+                        <h4>Adding a New User</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click the "Add User" button in the top navigation bar</li>
+                                <li>Fill in all required fields in the form:
+                                    <ul>
+                                        <li>Username (must be unique)</li>
+                                        <li>Email (must be unique)</li>
+                                        <li>Password</li>
+                                        <li>Confirm Password (must match the password)</li>
+                                    </ul>
+                                </li>
+                                <li>Click "Save" to create the new user</li>
+                            </ol>
+                        </div>
+
+                        <h4>Editing a User</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click the "Edit" button next to the user you want to modify</li>
+                                <li>Update the desired fields</li>
+                                <li>Ensure username and email remain unique if changed</li>
+                                <li>Click "Save" to apply changes</li>
+                            </ol>
+                        </div>
+
+                        <h4>Resetting User Password</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click the "Reset Password" button next to the user</li>
+                                <li>Confirm the action in the popup dialog</li>
+                                <li>The system will send a reset code to the user's email address</li>
+                                <li>The user must use this code to set a new password through the password reset process</li>
+                                <li>The reset code is valid for a limited time period</li>
+                            </ol>
+                        </div>
+
+                        <h4>Deleting a User</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click the "Delete" button next to the user</li>
+                                <li>Confirm the deletion in the popup dialog</li>
+                                <li>The user will be permanently removed from the system</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h3>Search and Filter</h3>
+                    <div class="sub-content">
+                        <p>The search field allows you to filter users by any field. The table columns can be sorted by clicking on the column headers.</p>
+                    </div>
+
+                    <h3>Logout</h3>
+                    <div class="sub-content">
+                        <p>To exit the application, click the "Logout" button in the top navigation bar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h2><i class="fab fa-android"></i> Android Application User Manual</h2>
+                <div class="manual-content">
+                    <h3>Account Management</h3>
+                    <div class="sub-content">
+                        <h4>Creating a New Account</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click on "Don't have an account? Register" button</li>
+                                <li>Fill in the registration form with:
+                                    <ul>
+                                        <li>Username (must be unique)</li>
+                                        <li>Email (must be unique)</li>
+                                        <li>Password</li>
+                                        <li>Confirm Password (must match the password)</li>
+                                    </ul>
+                                </li>
+                                <li>After successful registration, a verification code will be sent to your email</li>
+                                <li>Click on "Need to activate your account?"</li>
+                                <li>Enter the verification code received in your email to activate your account</li>
+                            </ol>
+                        </div>
+
+                        <h4>Logging In</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Enter your username or email</li>
+                                <li>Enter your password</li>
+                                <li>Click the login button</li>
+                                <li>Note: Your account must be activated to log in</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h3>Teleprompter Management</h3>
+                    <div class="sub-content">
+                        <h4>Creating a Teleprompter</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click on "Create Teleprompter"</li>
+                                <li>Enter a unique name for your teleprompter</li>
+                                <li>Add a description</li>
+                                <li>Select the file you want to use</li>
+                                <li>Click "Create" to finish</li>
+                            </ol>
+                        </div>
+
+                        <h4>Using a Teleprompter</h4>
+                        <div class="sub-content">
+                            <ol>
+                                <li>Click on "View Teleprompters" to see your list of teleprompters</li>
+                                <li>For each teleprompter, you can:
+                                    <ul>
+                                        <li>Select it for use</li>
+                                        <li>Delete it</li>
+                                        <li>Download the original file</li>
+                                    </ul>
+                                </li>
+                                <li>Once a teleprompter is selected, click "Start" to begin using it</li>
+                                <li>Choose the teleprompter type:
+                                    <ul>
+                                        <li>Classic mode</li>
+                                        <li>Voice recognition mode</li>
+                                    </ul>
+                                </li>
+                                <li>Click "Accept" to start using the teleprompter</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h3>Translation Features</h3>
+                    <div class="sub-content">
+                        <ol>
+                            <li>Select the source language</li>
+                            <li>Select the target language</li>
+                            <li>Choose your preferred translation method:
+                                <ul>
+                                    <li>Text translation: Type in the text box to get instant translation</li>
+                                    <li>Voice translation: Click "Voice Translator" and speak (ensure correct source language is selected)</li>
+                                    <li>File translation: Click "Upload File", select your file, and wait for translation (larger files may take longer)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h3>Settings</h3>
+                    <div class="sub-content">
+                        <p>In the settings section, you can:</p>
+                        <ul>
+                            <li>Change your password</li>
+                            <li>Update your profile information</li>
+                            <li>Delete your account</li>
+                            <li>Configure default language settings for the translator:
+                                <ul>
+                                    <li>Set default source language</li>
+                                    <li>Set default target language</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NovaSoft SRL. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
